@@ -23,8 +23,11 @@ public class test extends Application {
         primaryStage.setTitle("The RPG Game");
 
         StackPane sp = new StackPane();
-        Image img = new Image("MapFiles/starting room.png");
-        ImageView imgView = new ImageView(img);
+        //for(int i = 0; i < MapFiles.size()   )
+        Image img1 = new Image("MapFiles/starting room.png");
+        Image img2 = new Image("MapFiles/topmiddle.png");
+        ImageView imgView = new ImageView(img1);
+        //imgView.setImage(img2);
         sp.getChildren().add(imgView);
 
         Player player = new Player(100,100,50,50,1,400,400,new ArrayList<>());
